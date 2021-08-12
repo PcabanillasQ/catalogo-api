@@ -1,0 +1,28 @@
+POST http://localhost:3001/api/productos
+Content-Type: application/json
+
+{
+  "code": "RC-BS 6L",
+  "name": "Espejo Doble Redondo",
+  "brand": "AUTOTECH",
+  "slug": "espejos",
+  "colors": ["rojo"],
+  "voltage": [12, 24],
+  "power": [72, 55],
+  "description": "",
+  "dimensions": { "length": 104, "width": 8, "height": 15 },
+  "list_price": { "purchase": 3.25, "sale": 4 },
+  "images": {
+    "original": {
+      "width": 300,
+      "height": 300,
+      "url": "https://media4.giphy.com/media/rLqzXJdvdQXsVqLCeu/200w.webp?cid=ecf05e47o3tm576d2pwij5ms2hsqz3fb2qcae0lzns8q646h&rid=200w.webp&ct=g"
+    }
+  }
+}
+
+###
+POST http://localhost:3001/api/productos
+Content-Type: application/json
+
+{}
