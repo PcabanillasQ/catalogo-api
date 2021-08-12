@@ -68,7 +68,7 @@ app.post('/api/productos', (request, response) => {
   // response.end();
 })
 
-const PORT = 3001
+const PORT = process.env.PORT || 3001
 app.listen(PORT, (err) => {
   if (err) console.log(err)
   console.log(`Server ejecutandose en el puerto ${PORT}`)
